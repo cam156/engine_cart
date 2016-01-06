@@ -28,7 +28,8 @@ module EngineCart
         gem 'responders', "~> 2.0"
         gem 'sass-rails', ">= 5.0"
       else
-        gem 'sass-rails', "< 5.0"
+        # Required by https://github.com/rails/rails/blob/v4.1.14/railties/lib/rails/generators/app_base.rb#L257
+        gem 'sass-rails', "~> 4.0.3"
       end
     end
     # END ENGINE_CART BLOCK
